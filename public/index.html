@@ -24,19 +24,7 @@
 
 
   <script src="https://js.pusher.com/4.4/pusher.min.js"></script>
-  <script>
-    Pusher.logToConsole = true;
-
-    const pusher = new Pusher('2086a575e597e3d798f0', {
-      cluster: 'eu',
-      forceTLS: true
-    });
-
-    const channel = pusher.subscribe('my-channel');
-    channel.bind('my-event', function(data) {
-      console.log(data);
-    });
-  </script>
+  <script src="app.js" charset="utf-8"></script>
 </body>
 
 </html>
